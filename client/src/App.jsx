@@ -235,7 +235,7 @@ const CodeReviewApp = () => {
     setError('');
 
     try {
-      const response = await fetch(`${url}/get-response`, {
+      const response = await fetch(url, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
